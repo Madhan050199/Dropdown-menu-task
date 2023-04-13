@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+<title>Dropdown</title>
+</head>
+<style>
+*{
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+body{
+--bg-color:#2874F0;
+}
+
+.button{
+padding:5px 20px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+color:#2874F0;
+background-color:white;
+border-radius:5px;
+border:none;
+}
+.dropdown_container{
+position:relative;
+bottom:42px;
+}
+.dropdown_option{
+position:absolute;
+top:32px;
+right:-75px;
+font-size:18px;
+background-color:white;
+font-family:sans-serif;
+width:250px;
+box-shadow:0px 0px 5px black;
+border-radius:5px;
+display:none;
+}
+.dropdown_option a{
+text-decoration:none;
+color:black;
+padding:20px 15px;
+display:block;
+border-top:1px solid #BDBDBD;
+}
+.dropdown_option a img{
+width:15px;
+height:15px;
+margin-right:10px;
+}
+.dropdown_option a:hover{
+background-color:rgba(230, 229, 236,0.4);
+}
+.flex_container{
+display:flex;
+justify-content:center;
+}
+.dropdown_container:hover .dropdown_option{
+display:block;
+}
+.navigation_bar{
+width:100vw;
+height:50px;
+background-color:var(--bg-color);
+}
+.dropdown_option a:first-child {
+font-size:15px;
+font-weight:bold;
+}
+.dropdown_option a:first-child span{
+color:#2874F0;
+margin-left:50px;
+}
+</style>
+<body>
+<div class="navigation_bar"></div>
+<div class="flex_container">
+<div class="dropdown_container">
+<div class="btn">
+<button class="button">Login</button>
+</div>
+<div class="dropdown_option">
+<a href="#">New customer?<span>Sign Up</span></a>
+<a href="#"><img src="images/profile.png" alt="profile">My Profile</a>
+<a href="#"><img src="images/add.png" alt="add">Flipkart Plus Zone</a>
+<a href="#"><img src="images/order.png" alt="order">Orders</a>
+<a href="#"><img src="images/like.png" alt="like">Wishlist</a>
+<a href="#"><img src="images/reward.png" alt="reward">Rewards</a>
+<a href="#"><img src="images/gift.png" alt="gift">Gift Cards</a>
+</div>
+</div>
+</div>
+</body>
+</html>
